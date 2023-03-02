@@ -57,7 +57,8 @@ class Auth {
 
 			return res.status(200).json({
 				success: true,
-				token
+				token,
+				user
 			})
 
 		} catch (error) {
