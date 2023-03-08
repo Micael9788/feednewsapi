@@ -18,7 +18,10 @@ app.use(require("./middlewares/check-errors"))
 
 // rotas
 app.use(require("./routes/user/user"))
+app.use(require("./routes/posts/post"))
+app.use(require("./routes/store/store"))
 
+// app listen
 const port = process.env.PORT || 3333
 app.listen(port, async () => {
 	try {
